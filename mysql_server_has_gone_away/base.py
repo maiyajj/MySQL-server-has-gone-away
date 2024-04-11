@@ -18,6 +18,7 @@ def check_mysql_gone_away(db_wrapper):
                 logger.warn("MySQL server has gone away. Rerunning query: %s", query)
                 if (
                     'MySQL server has gone away' in str(e) or
+                    'Server has gone away' in str(e) or
                     'Lost connection to MySQL server during query' in str(e)
                 ):
                     db_wrapper.connection.close()
