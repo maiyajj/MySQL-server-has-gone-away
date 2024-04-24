@@ -1,16 +1,16 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="mysql_server_has_gone_away",
-    version="1.0.0",
+    name="mysql_server_has_gone",
+    version="2.0.5",
     description="Django myslq backend that fixes issue with long living connection",
-    author='Andrew Koidan',
-    author_email='deathangel908@gmail.com',
+    author="maiyajj",
+    author_email="1045373828@qq.com",
     license="MIT",
-    url='https://github.com/akoidan/MySQL-server-has-gone-away',
+    url="https://github.com/maiyajj/MySQL-server-has-gone-away",
     long_description=long_description,
     packages=find_packages(),
     long_description_content_type="text/markdown",
